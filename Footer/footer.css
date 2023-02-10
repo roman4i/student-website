@@ -1,0 +1,27 @@
+footer {
+    padding-top: 100px;
+}
+
+.followCont {
+    margin: 20px 0 20px 0;
+}
+
+.followText {
+    text-decoration: underline;
+}
+
+.navLinksFooter {
+    display: flex;
+    padding: 20px 0 20px 0;
+    flex-direction: column;
+    height: 120px;
+    flex-wrap: wrap;
+}
+
+.navLinksFooter a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}

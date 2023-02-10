@@ -1,0 +1,94 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    width: fit-content;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'GoldenWings';
+    src: url('/fonts//GoldenWings.ttf');
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: black;
+        color: white;
+        padding: 0;
+        margin: 0;
+        font-family: Inter;
+    }
+    .basic {
+        padding: 0 30px 0 30px;
+    }
+    
+    
+    .whiteLine {
+        color: white;
+        background-color: white;
+        height: 3px;
+    }
+    
+    .grayLine {
+        color: gray;
+        background-color: gray;
+        height: 2px;
+    }
+    
+    .articleLine {
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 130px;
+    }
+    
+    .datedArticleTitle {
+        width: 60%;
+    }
+    
+    .errorContainer {
+        margin-top: 150px;
+    }
+    
+    .errorImage {
+        width: 100%;
+    }
+    
+    .pageTitle1 {
+        font-family: GoldenWings;
+    }
+    
+    .pageTitle2 {
+        font-family: GoldenWings;
+    }
+  }

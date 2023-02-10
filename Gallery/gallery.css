@@ -1,0 +1,9 @@
+.album {
+    display: flex;
+    margin-bottom: 100px;
+    overflow-x: scroll;
+}
+
+.albumImage {
+    height: 250px;
+}

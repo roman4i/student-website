@@ -1,0 +1,12 @@
+.teachersData {
+    padding: 10px;
+    border: solid 2px white;
+}
+
+.teacherCard {
+    padding: 0 10px 0 10px;
+}
+
+.teacherImg {
+    height: 200px;
+}

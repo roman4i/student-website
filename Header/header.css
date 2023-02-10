@@ -1,0 +1,14 @@
+ul a {
+    display: block;
+    border: 1px solid white;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.hamburger {
+    width: 32px;
+    height: 22px;
+    margin-top: 20px;
+}

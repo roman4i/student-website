@@ -1,0 +1,87 @@
+.mainCapt {
+    font-family: GoldenWings;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.mainCaption1 {
+    text-align: left;
+}
+
+.mainCaption2 {
+    text-align: center;
+}
+
+.mainCaption3 {
+    text-align: right;
+}
+
+.mainPageSpacer {
+    height: 78px;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.aboutCollBlock {
+    margin: 0 0 30px 0;
+}
+
+.collegeName {
+    margin-bottom: 300px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.aboutCollegeTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.aboutCollegeMain {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.mainAboutBtn {
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 50px;
+    display: block;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.companiesPictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 120px 0 180px 0;
+}
+
+.newsHeadWhite {
+    color: white;
+    text-align: left;
+    margin: 2px 0 2px 0;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 60px;
+    font-family: GoldenWings;
+}
+
+.newsHeadGray {
+    color: gray;
+    text-align: right;
+    margin: 50px 0 50px 0;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 60px;
+    font-family: GoldenWings;
+    margin-bottom: 90px;
+}
