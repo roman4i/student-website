@@ -23,7 +23,7 @@ const teachersList2 = [
     {
         name: 'Габеркон Наталія Юріївна',
         description: 'ххххххххххх \n xxxxxxxx \n',
-        src: 'Габеркон.jpg',
+        src: 'Габеркорн.jpg',
         alt: 'Габеркон',
     },
     {

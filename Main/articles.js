@@ -11,12 +11,6 @@ const articles = [
         text: '',
         date: '07/11/2022',
     },
-    {
-        number: '03',
-        title: 'З Днем Захисника та Захисниці України',
-        text: '',
-        date: '07/11/2022',
-    },
 ];
 
 export default articles;

@@ -1,0 +1,57 @@
+.managementCardBody {
+    margin-bottom: 100px;
+}
+
+.managerPhoto {
+    width: 100%;
+}
+
+.manager {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.managerPosition {
+    margin-top: 10px;
+}
+
+.managerName {
+    margin-right: 5px;
+}
+
+.managementText {
+    padding: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+    .managementCardBody {
+        display: flex;
+        margin-bottom: 120px;
+        border: 3px solid white;
+        margin-left: 110px;
+        margin-right: 110px;
+        flex-direction: row-reverse;
+    }
+
+    .manager {
+        font-size: 58px;
+        text-align: right;
+        margin: auto auto 0px auto;
+    }
+
+    .managerPosition {
+        font-size: 34px;
+        text-align: right;
+    }
+
+    .aboutManager {
+        font-size: 20px;
+        margin: 100px 100px 0px 100px;
+    }
+
+    .managerPhoto {
+        border-left: 3px solid white;
+        width: 404px;
+    }
+}

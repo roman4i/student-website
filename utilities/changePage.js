@@ -5,27 +5,43 @@ import entrantContainer from "../Entrant/Entrant.js";
 import specialityContainer from "../Speciality/Speciality.js";
 import teachersContainer from "../Teachers/Teachers.js";
 import errorContainer from "../404/404.js";
+import mapContainer from "../Map/Map.js";
+import contactsContainer from "../Contacts/Contacts.js";
+import managementContainer from "../Management/Management.js"
+import aboutContainer from "../About/About.js";
 
 const changePage = (event) => {
     let result;
     switch (event.target.text) {
-        case 'Main':
+        case 'Головна':
             result = main;
             break;
-        case 'Gallery':
+        case 'Галерея':
             result = galleryContainer;
             break;
-        case 'Student':
+        case 'Студенту':
             result = studentContainer;
             break;
-        case 'Entrant':
+        case 'Абітурієнту':
             result = entrantContainer;
             break;
-        case 'Speciality':
+        case 'Спеціальності':
             result = specialityContainer;
             break;
         case 'Teachers':
             result = teachersContainer;
+            break;
+        case 'Map': 
+            result = mapContainer;
+            break;
+        case 'Контакти':
+            result = contactsContainer;
+            break;
+        case 'Management':
+            result = managementContainer;
+            break;
+        case 'ДІЗНАТИСЯ БІЛЬШЕ':
+            result = aboutContainer;
             break;
     
         default:
@@ -40,6 +56,7 @@ const changePage = (event) => {
     content.append(result);
 
     document.getElementById('header').after(content);
+    window.scrollTo(0,0);
 }
 
 export default changePage;

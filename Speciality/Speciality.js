@@ -5,7 +5,7 @@ import specialityArticles from "./specialityArticles.js";
 
 const specialityContainer = document.createElement('div');
 
-specialityContainer.append(newPageTitle('04', 'ENTRANT'));
+specialityContainer.append(newPageTitle('04', 'СПЕЦІАЛЬНОСТІ', true));
 
 specialityArticles.forEach(val => {
     specialityContainer.append(newWhiteLine() ,newArticle(val, val.number));

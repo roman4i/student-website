@@ -8,24 +8,32 @@ const navigaton = document.createElement('nav');
 navigaton.className = 'navigation';
 
 const navBar  = document.createElement('ul');
+navBar.className = 'navbar';
 
 const newItem = (itemName) => {
-    const link = document.createElement('a');
-    link.href = '#';
-    link.append(document.createElement('li').textContent = itemName);
-    link.onclick = changePage;
+    const linkContainer = document.createElement('li');
 
-    return  link;
+    const link = document.createElement('a');
+    link.text = itemName;
+    link.className = 'navLink';
+    link.onclick = event  => {
+        changePage(event);
+        // check if window less then 1400px
+        if (window.innerWidth < '1400') navBar.style.display = 'none';;
+    };
+
+    linkContainer.append(link);
+
+    return  linkContainer;
 }
 
 navBar.append(
-    newItem('Main'),
-    newItem('Gallery'),
-    newItem('Student'),
-    newItem('Entrant'),
-    newItem('Contacts'),
-    newItem('Speciality'),
-    newItem('Teachers'),
+    newItem('Головна'),
+    newItem('Галерея'),
+    newItem('Студенту'),
+    newItem('Абітурієнту'),
+    newItem('Спеціальності'),
+    newItem('Контакти'),
 );
 
 navBar.hidden = true;
@@ -34,7 +42,7 @@ const hamburger = document.createElement('img');
 hamburger.src = '/assets/icons/hamburger.svg'
 hamburger.className = 'hamburger';
 hamburger.onclick =  () => {
-    navBar.hidden === true ? navBar.hidden = false : navBar.hidden = true;
+    navBar.style.display === 'block' ? navBar.style.display = 'none' : navBar.style.display = 'block';
 }
 
 header.append(hamburger);

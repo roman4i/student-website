@@ -1,9 +1,11 @@
 .album {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 220px;
     overflow-x: scroll;
 }
 
 .albumImage {
-    height: 250px;
+    height: 375px;
+    margin-left: 20px;
+    margin-right: 20px;
 }

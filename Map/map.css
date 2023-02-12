@@ -1,0 +1,42 @@
+.floors {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.map {
+    background-color: white;
+}
+
+.rects {
+    stroke:#2B2A29;stroke-width:84.66;stroke-linecap:round;stroke-linejoin:round;
+    fill: none;
+}
+
+.Entrances{
+    z-index: 4;
+    stroke:#2F4F4F;stroke-width:84.66;stroke-linecap:round;stroke-linejoin:round;
+    fill:#FFFFFF;
+
+}
+
+.Arr{
+    fill: none;
+    stroke:#2B2A29;stroke-width:16.93;stroke-linecap:round;stroke-linejoin:round;
+}
+
+svg {
+    width: auto;
+    height: auto;
+}
+
+@media screen and (min-width: 1400px) {
+    .floors {
+        font-size: 24px;
+    }
+    .map {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}

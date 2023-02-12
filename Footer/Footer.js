@@ -1,4 +1,5 @@
 import { newGrayLine, newWhiteLine } from "../components/lines.js";
+import changePage from '../utilities/changePage.js';
 
 const footerContainer = document.createElement('footer');
 
@@ -16,6 +17,7 @@ const followIconsContainer = document.createElement('div');
 
 const createIcon = (iconPath, link) => {
     const result = document.createElement('a');
+    result.className = 'socialsLink';
     result.href = link;
 
     const icon = document.createElement('img');
@@ -29,7 +31,7 @@ const createIcon = (iconPath, link) => {
 followIconsContainer.append(createIcon('/assets/icons/social/facebook.svg', 'https://facebook.com'));
 followIconsContainer.append(createIcon('/assets/icons/social/twitter.svg', 'https://twitter.com'));
 followIconsContainer.append(createIcon('/assets/icons/social/in.svg', 'https://linkedin.com'));
-followIconsContainer.append(createIcon('/assets/icons/social/mail.svg', 'https://google.com'));
+followIconsContainer.append(createIcon('/assets/icons/social/mail.svg', '#'));
 
 follow.append(followIconsContainer);
 
@@ -40,22 +42,25 @@ footerContainer.append(newGrayLine());
 const navLinks = document.createElement('div');
 navLinks.className = 'navLinksFooter';
 
-const newFooterLink = (linkName, link) => {
+const newFooterLink = (linkName) => {
     const result = document.createElement('a');
-    result.href = link;
     result.text = linkName;
+
+    result.onclick = event => {
+        changePage(event);
+    }
 
     return result;
 }
 
-navLinks.append(newFooterLink('Головна', '/main'));
-navLinks.append(newFooterLink('Галерея', '/gallery'));
-navLinks.append(newFooterLink('Про коледж', '/about'));
-navLinks.append(newFooterLink('Студенту', '/student'));
-navLinks.append(newFooterLink('Абітурієнту', '/abiturient'));
-navLinks.append(newFooterLink('Спеціальності', '/specials'));
-navLinks.append(newFooterLink('Контакти', '/contacts'));
+navLinks.append(newFooterLink('Головна'));
+navLinks.append(newFooterLink('Галерея'));
+navLinks.append(newFooterLink('Про коледж'));
+navLinks.append(newFooterLink('Студенту'));
+navLinks.append(newFooterLink('Абітурієнту'));
+navLinks.append(newFooterLink('Спеціальності'));
+navLinks.append(newFooterLink('Контакти'));
 
-footerContainer.append(navLinks);
+footerContainer.append(navLinks, newWhiteLine());
 
 export default footerContainer;

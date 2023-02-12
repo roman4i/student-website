@@ -1,14 +1,39 @@
-ul a {
+.navLink {
     display: block;
     border: 1px solid white;
-    padding: 3px;
+    padding: 10px;
     text-decoration: none;
     color: white;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute;
+    background: black;
+    width: calc(100% - 60px);
 }
 
 .hamburger {
     width: 32px;
     height: 22px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
+
+@media screen and (min-width: 1400px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 100%;
+        position: unset;
+    }
+}
+
+

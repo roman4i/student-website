@@ -3,7 +3,7 @@ import { teachersList1, teachersList2, teachersList3 } from "./teachersList.js";
 
 const teachersContainer = document.createElement('div');
 
-teachersContainer.append(newPageTitle('06', 'TEACHERS'));
+teachersContainer.append(newPageTitle('06', 'ВИКЛАДАЧІ'));
 
 const newTeachersAlbum = (data) => {
     const album = document.createElement('div');
@@ -22,9 +22,11 @@ const newTeachersAlbum = (data) => {
         teacherData.className = 'teachersData';
 
         const teacherName = document.createElement('h3');
+        teacherName.className = 'teachersDataName';
         teacherName.textContent = val.name;
 
         const teacherDescription = document.createElement('span');
+        teacherDescription.className = 'teachersDataDescr';
         teacherDescription.textContent = val.description;
 
         teacherData.append(teacherName, teacherDescription);

@@ -1,12 +1,32 @@
 .teachersData {
-    padding: 10px;
+    padding: 22px;
     border: solid 2px white;
 }
 
+.teachersDataName {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.teachersDataDescr {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 46px;
+}
+
 .teacherCard {
-    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
 }
 
 .teacherImg {
-    height: 200px;
+    height: 517px;
+}
+
+@media screen and (min-width: 1400px) {
+    .teacherCard {
+        margin: 0 50px 0 50px;
+    }
 }

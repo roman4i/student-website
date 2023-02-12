@@ -4,7 +4,7 @@ import newPageTitle from "../components/pageTitle.js";
 
 const galleryContainer = document.createElement('div');
 
-galleryContainer.append(newPageTitle('01', 'GALLERY'));
+galleryContainer.append(newPageTitle('01', 'ГАЛЕРЕЯ'));
 
 const createAlbum  = (photos) => {
     const albumLine = document.createElement('div');

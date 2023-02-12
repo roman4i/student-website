@@ -20,75 +20,151 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-html {
-    width: fit-content;
-}
-
 @font-face {
-    font-family: Inter;
-    src: url('/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    font-family: Montserrat;
+    src: url('/fonts/Montserrat.ttf');
 }
 
-@font-face {
-    font-family: 'GoldenWings';
-    src: url('/fonts//GoldenWings.ttf');
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.basic {
+    margin: 0 30px 0 30px;
 }
 
 
+.whiteLine {
+    background-color: white;
+    height: 3px;
+}
 
+.grayLine {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 2px;
+}
 
+.articleLine {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: black;
-        color: white;
-        padding: 0;
-        margin: 0;
-        font-family: Inter;
-    }
+.justify {
+    justify-content: space-between;
+}
+
+.articleData {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.articleNum {
+    margin-right: 15px
+}
+
+.datedArticleTitle {
+    width: 60%;
+}
+
+.errorContainer {
+    margin-top: 150px;
+}
+
+.errorImage {
+    width: 100%;
+}
+
+.pageTitle {
+    font-family: Montserrat;
+    margin-top: 86px;
+    margin-bottom: 157px
+}
+
+.pageTitle1 {
+    font-weight: 400;
+    font-size: 60px;
+    margin-left: 26px;
+    margin-bottom: 60px;
+}
+
+.pageTitle2 {
+    font-weight: 400;
+    font-size: 48px;
+    margin-left: 33px;
+    margin-top: 60px;
+}
+
+.smallPageTitle2 {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.articlesSpacer {
+    border-left: 3px solid white;
+    padding-left: 30px;
+}
+
+@media screen and (min-width: 1400px) {
     .basic {
-        padding: 0 30px 0 30px;
+        margin: 0 60px 0 60px;
     }
-    
-    
-    .whiteLine {
-        color: white;
-        background-color: white;
-        height: 3px;
+
+    .pageTitle {
+        margin-top: 132px;
+        margin-bottom: 250px;
     }
-    
-    .grayLine {
-        color: gray;
-        background-color: gray;
-        height: 2px;
-    }
-    
-    .articleLine {
-        font-size: 14px;
-        font-weight: 400;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 130px;
-    }
-    
-    .datedArticleTitle {
-        width: 60%;
-    }
-    
-    .errorContainer {
-        margin-top: 150px;
-    }
-    
-    .errorImage {
-        width: 100%;
-    }
-    
     .pageTitle1 {
-        font-family: GoldenWings;
+        font-size: 110px;
+        margin-left: 152px;
+        margin-bottom: 78px;
+    }
+    .pageTitle2 {
+        font-size: 110px;
+        margin-top: 79px;
+        margin-left: auto;
+        margin-right: 230px;
+        width: fit-content;
+    }
+
+    .smallPageTitle2 {
+        font-size: 110px;
+        margin-top: 79px;
+        margin-left: auto;
+        margin-right: 230px;
+        width: fit-content;
+    }
+
+    .articleLine {
+        font-size: 20px;
+    }
+
+    .studentsContent {
+        border-left: 3px solid white;
+        padding-left: 110px;
+        margin-left: 79px;
+        padding-bottom: 69px;
+        padding-top: 69px;
+        font-size: 20px;
     }
     
-    .pageTitle2 {
-        font-family: GoldenWings;
-    }
-  }
+}
