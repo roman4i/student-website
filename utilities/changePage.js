@@ -37,7 +37,7 @@ const changePage = (event) => {
         case 'Контакти':
             result = contactsContainer;
             break;
-        case 'Management':
+        case 'Керівництво':
             result = managementContainer;
             break;
         case 'ДІЗНАТИСЯ БІЛЬШЕ':

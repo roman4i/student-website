@@ -55,7 +55,7 @@ const newFooterLink = (linkName) => {
 
 navLinks.append(newFooterLink('Головна'));
 navLinks.append(newFooterLink('Галерея'));
-navLinks.append(newFooterLink('Про коледж'));
+navLinks.append(newFooterLink('Керівництво'));
 navLinks.append(newFooterLink('Студенту'));
 navLinks.append(newFooterLink('Абітурієнту'));
 navLinks.append(newFooterLink('Спеціальності'));
